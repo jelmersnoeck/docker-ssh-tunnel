@@ -3,5 +3,5 @@ IMAGE=jelmersnoeck/ssh-tunnel
 docker:
 	docker build -t ${IMAGE} .
 
-release:
+release: docker
 	docker push ${IMAGE}
